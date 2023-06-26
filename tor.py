@@ -18,7 +18,7 @@ def renew_connection():
 def start():
     while True:
         try:
-            print(requests.get("https://camp-kosice.sk", proxies=proxies))
+            print(requests.get("https://", proxies=proxies))
         except:
             pass
         renew_connection()
